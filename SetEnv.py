@@ -18,11 +18,12 @@ def show():
 	env_dist = os.environ
 	for key in env_dist:
 		print key + ' : ' + env_dist[key]
+	return env_dist["TEST_LIST"]
 
 def SetEnv(CaseLst):
 
 	print CaseLst
-	show()
+	show()=CaseLst
 
 
 	return 0
