@@ -1,5 +1,5 @@
 
-
+import os
 
 def GetTestLst():
 	print "Get test case list"
@@ -12,10 +12,18 @@ def GetTestLst():
 
 	return test_lst
 
+def show():
+	print "This Test case 1"
+	print "env list"
+	env_dist = os.environ
+	for key in env_dist:
+		print key + ' : ' + env_dist[key]
 
 def SetEnv(CaseLst):
 
 	print CaseLst
+	show()
+
 
 	return 0
 
