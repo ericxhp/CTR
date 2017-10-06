@@ -26,7 +26,7 @@ def SetEnv(CaseLst):
 	print CaseLst
 	env_dist=show()
 	env_dist["TEST_LIST"]=' '.join(CaseLst)
-
+	print env_dist["TEST_LIST"]
 
 	return 0
 
