@@ -29,6 +29,7 @@ def SetEnv(CaseLst):
 	print CaseStr
         tmpFile.write("CASE_LIST={}\n".format(CaseStr))
         tmpFile.close()
+	print "Create env file done"
 
 	return 0
 
