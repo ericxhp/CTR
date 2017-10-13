@@ -23,10 +23,12 @@ def show():
 
 def SetEnv(CaseLst):
 
-	print CaseLst
-	#env_dist=show()
-	#env_dist["TEST_LIST"]=' '.join(CaseLst)
-	#print env_dist["TEST_LIST"]
+	testFilePath = os.path.dirname(os.path.abspath(__file__)) + "\\TEST_LIST_ENV.txt"
+        tmpFile = open(testFilePath,"w+")
+	CaseStr=" ".join(CaseLst)
+	print CaseStr
+        tmpFile.write("CASE_LIST={}\n".format(CaseStr))
+        tmpFile.close()
 
 	return 0
 
